@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/css/styles.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container-fluid h-[100%] p-0 m-0 bg-center bg-cover bg-fixed"
+        style="background-image: url(./assets/slakoth.jpeg)">
+        <div class="titleBox">
+            <h1 class="pokemonFont text-center pt-[40px] text-[60px] text-[#FFCC03]">
+                Pokemon Api
+            </h1>
+        </div>
+
+        <div class="convertOr grid grid-cols-10">
+            <div
+                class="boxSearch col-span-4 w-[80%] h-[100%] p-0 m-0 flex flex-col items-center">
+                <input
+                    id="boxSearch"
+                    class="input text-center text-[30px] h-[75px] mt-[60px] rounded-[6px] border-2 border-black w-[100%] bg-[rgba(255,255,255,0.5)]"
+                    type="form" placeholder="Search Pokemon" />
+                <button
+                    id="searchBtn"
+                    class="searchBtn h-[75px] w-[150px] text-[30px] flex justify-center items-center rounded-[12px] bg-[rgba(255,255,255,0.5)] mt-[126px]"
+                    type="button">
+                    Search
+                </button>
+                <button
+                    class="searchBtn h-[75px] w-[150px] text-[30px] flex justify-center items-center rounded-[12px] bg-[rgba(255,0,0,0.5)] mt-[126px]"
+                    type="button"
+                    id="Randomize">
+                    Randomize
+                </button>
+                <button
+                class="searchBtn h-[75px] w-[150px] text-[30px] flex justify-center items-center rounded-[12px] bg-[rgba(255,0,0,0.5)] mt-[126px]"
+                type="button"
+                id="FavoriteList">
+                Favorites
+            </button>
+            </div>
+
+            <div class="boxOutput col-span-6 w-[100%] p-0 m-0 mb-[100px] flex-col">
+                <div class="boxOutputInside w-[92.5%] mt-[20px] rounded-[12px] border-[10px] border-black bg-[rgba(255,255,255,0.5)]">
+                    <a class="aTag absolute" id="favoriteBtn" href="#">
+                        <img class="picture" id="pictureStar" src="./assets/Star 1.png" alt="">
+                    </a>
+                    <h1 class="namePokemon text-[50px] w-[100%] underline flex justify-center" id="pokemonName">
+                        Pokemon Name
+                    </h1>
+                    <div class="row flex w-[100%] h-[150px] justify-evenly items-center">
+                        <img class="normalPic" id="normalPic" src="" alt="">
+                        <img class="shinyPic" id="shinyPic" src="" alt="">
+                        <div class="typePicBox flex justify-center items-center flex-col">
+                            <img class="typePic" id="typePic" src="" alt="">
+                            <img class="secondTypePic" id="secondTypePic" src="" alt="">
+                        </div>
+                    </div>
+
+                    <div class="row flex w-[100%] justify-evenly">
+                        <h2 class="text text-[30px] w-[150px] h-[75px] flex justify-center items-center">
+                            Normal
+                        </h2>
+                        <h2 class="text text-[30px] w-[150px] h-[75px] flex justify-center items-center">
+                            Shiny
+                        </h2>
+                        <h2 class="text text-[30px] w-[150px] h-[75px] flex justify-center items-center">
+                            Type
+                        </h2>
+                    </div>
+
+                    <div class="locationRow row flex w-[100%] justify-evenly mt-[50px]">
+                        <h2 class="textLocation text-[30px]">Location :</h2>
+                        <h2 class="textLocation2 text-[30px] text-center w-[400px]" id="locationText"></h2>
+                    </div>
+
+                    <div class="abilityRow row flex w-[100%] justify-evenly mt-[50px]">
+                        <h2 class="textAbility text-[30px]">Ability :</h2>
+                        <h2 class="textAbility2 text-[30px] text-center w-[400px]" id="abilityText"></h2>
+                    </div>
+
+                    <div class="movesRow row flex w-[100%] justify-evenly mt-[50px]">
+                        <h2 class="textMove text-[30px]">Moves :</h2>
+
+                        <select name="moves" class="textMove2 text-center w-[400px] h-[50px] rounded-[12px] border-2 border-black" id="moves">
+                            <option value="default">Choose a move</option>
+                        </select>
+                    </div>
+
+                    <div class="evolutionsRow row flex w-[100%] justify-evenly mt-[50px] mb-[70px]">
+                        <h2 class="textEvolution text-[30px]">Evolutions :</h2>
+                        <h2 class="textEvolution2 text-[30px] text-center w-[400px]" id="evolutionText"></h2>
+                    </div>
+                </div>
+
+                <div class="boxOutputInside w-[92.5%] mt-[20px] rounded-[12px] border-[10px] border-black bg-[rgba(255,255,255,0.5)]" id="favoriteBox">
+                    <h1 class="name text-[50px] w-[100%] underline flex justify-center">
+                        Favorites
+                    </h1>
+                    <div class="favoritesBoxInner" id="favoritesBoxInner">
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/app.js" type="module"></script>
+</body>
+
+</html>

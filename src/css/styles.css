@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: PokemonSolid;
+    src: url(../assets/pokemon/Pokemon\ Solid.ttf);
+}
+
+.pokemonFont{
+    font-family: PokemonSolid;
+    text-shadow:
+     -5px -5px 0 #346ABD,  
+      2px -2px 0 #346ABD,
+      -2px 2px 0 #346ABD,
+       2px 2px 0 #346ABD;
+       /* -webkit-text-stroke: 4px #346ABD; */
+}
+
+.normal2Pic{
+    width: 150px;
+    height: 150px;
+}
+
+.shiny2Pic{
+    width: 150px;
+    height: 150px;
+}
+
+.type2Pic{
+    width: 150px;
+    height: 75px;
+}
+
+.secondType2Pic{
+    width: 150px;
+    height: 75px;
+}
+
+.boxSearch{
+    padding-left: 14%;
+}
+
+.pText{
+    width: 33%;
+}
+
+.btnDelete{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    width: 33%;
+}
+
+.imageClass{
+    width: 33%;
+}
+
+.favoritesBoxInner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .convertOr{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boxOutput{
+        display: flex;
+        align-items: center;
+    }
+
+    .boxSearch{
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .convertOr{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boxOutput{
+        display: flex;
+        align-items: center;
+    }
+
+    .normal2Pic{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .shiny2Pic{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .type2Pic{
+        width: 100px;
+        height: 50px;
+    }
+    
+    .secondType2Pic{
+        width: 100px;
+        height: 50px;
+    }
+
+    .locationRow{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textLocation{
+        text-align: center;
+    }
+
+    .textLocation2{
+        width: auto;
+    }
+
+    .abilityRow{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textAbility{
+        text-align: center;
+    }
+
+    .textAbility2{
+        width: auto;
+    }
+
+    .movesRow{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textMove{
+        text-align: center;
+    }
+
+    .textMove2{
+        width: auto;
+    }
+
+    .evolutionsRow{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textEvolution{
+        text-align: center;
+    }
+
+    .textEvolution2{
+        width: auto;
+    }
+
+    .namePokemon{
+        font-size: 30px;
+    }
+
+    .aTag{
+        width: 50px;
+        height: 50px;
+    } 
+
+}
